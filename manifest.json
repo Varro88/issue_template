@@ -1,0 +1,23 @@
+{
+    "manifest_version": 3,
+    "name": "Issue template",
+    "short_name": "Issue template",
+    "description": "Fills template for issues (e.g. in Jira)",
+    "action": {
+      "default_popup": "popup.html"
+    },
+    "content_scripts": [
+      {
+        "matches": ["https://jira.demo.almworks.com/*"],
+        "js": ["content-script.js"]
+      }
+    ],
+    "icons": {
+      "128": "icon.png",
+      "48": "icon.png",
+      "32": "icon.png",
+      "16": "icon.png"
+    },
+    "permissions": [ "activeTab", "storage" ],
+    "version": "0.3.0"
+}

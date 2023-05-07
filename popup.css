@@ -1,0 +1,74 @@
+button {
+	border-radius: 6px;
+	display: inline-block;
+	cursor: pointer;
+	color: #ffffff;
+	font-family: Arial;
+	font-size: 12px;
+	font-weight: bold;
+	margin: 5px;
+	padding: 6px 8px;
+	text-decoration: none;
+	width: 100px;
+  }
+  
+  button:active {
+	position: relative;
+	top: 1px;
+  }
+  
+  .green {
+	box-shadow: inset 0px 1px 0px 0px #a4e271;
+	background: linear-gradient(to bottom, #89c403 5%, #77a809 100%);
+	background-color: #89c403;
+	border: 1px solid #74b807;
+	display: inline-block;
+	text-shadow: 0px 1px 0px #528009;
+  }
+  
+  .green:hover {
+	background: linear-gradient(to bottom, #77a809 5%, #89c403 100%);
+	background-color: #77a809;
+  }
+  
+  .blue {
+	box-shadow: inset 0px 1px 0px 0px #bee2f9;
+	background: linear-gradient(to bottom, #63b8ee 5%, #468ccf 100%);
+	background-color: #63b8ee;
+	border: 1px solid #3866a3;
+	color: #14396a;
+	text-shadow: 0px 1px 0px #7cacde;
+  }
+  
+  .blue:hover {
+	background: linear-gradient(to bottom, #468ccf 5%, #63b8ee 100%);
+	background-color: #468ccf;
+  }
+  
+  .red {
+	box-shadow: inset 0px 1px 0px 0px #f7c5c0;
+	background: linear-gradient(to bottom, #fc8d83 5%, #e4685d 100%);
+	background-color: #fc8d83;
+	border: 1px solid #d83526;
+	text-shadow: 0px 1px 0px #b23e35;
+  }
+  
+  .red:hover {
+	background: linear-gradient(to bottom, #e4685d 5%, #fc8d83 100%);
+	background-color: #e4685d;
+  }
+  
+  .yellow {
+	box-shadow: inset 0px 1px 0px 0px #fff6af;
+	background: linear-gradient(to bottom, #ffec64 5%, #ffab23 100%);
+	background-color: #ffec64;
+	border: 1px solid #ffaa22;
+	color: #333333;
+	text-shadow: 0px 1px 0px #ffee66;
+  }
+  
+  .yellow:hover {
+	background: linear-gradient(to bottom, #ffab23 5%, #ffec64 100%);
+	background-color: #ffab23;
+  }
+  

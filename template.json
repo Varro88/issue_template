@@ -1,0 +1,104 @@
+{
+    "selectors": {
+        "commentButton": "#footer-comment-button",
+        "textModeButton": "li[data-mode='source']>button",
+        "visualModeButton": "li[data-mode='wysiwyg']>button",
+        "commentField": "#comment"
+    },
+    "uiElements": [
+        {
+            "type": "text",
+            "id": "build",
+            "text": "Build",
+            "bold": true
+        },
+        {
+            "type": "checkbox",
+            "id": "env",
+            "text": "Environment",
+            "values": [
+                {
+                    "id": "dev",
+                    "value": "DEV"
+                },
+                {
+                    "id": "qa1",
+                    "value": "QA1"
+                },
+                {
+                    "id": "stage",
+                    "value": "Stage"
+                }
+            ],
+            "bold": true
+        },
+        {
+            "type": "checkbox",
+            "id": "ios-versions",
+            "text": "iOS versions",
+            "values": [
+                {
+                    "id": "v14",
+                    "value": "14"
+                },
+                {
+                    "id": "v15",
+                    "value": "15"
+                },
+                {
+                    "id": "v16",
+                    "value": "16"
+                }
+            ],
+            "bold": true
+        },
+        {
+            "type": "radiobutton",
+            "id": "status",
+            "text": "Status",
+            "values": [
+                {
+                    "id": "approved",
+                    "value": "Approved"
+                },
+                {
+                    "id": "declined",
+                    "value": "Declined"
+                }
+            ],
+            "bold": true
+        },
+        {
+            "type": "button",
+            "id": "create",
+            "text": "Create issue",
+            "cssClass": "red",
+            "comment": ["*Steps to reproduce*:",
+                "# ",
+                "",
+                "*Actual result*: ",
+                "",
+                "&nbsp;",
+                "",
+                "*Expected result*: ",
+                "",
+                "&nbsp;",
+                ""
+            ]
+        },
+        {
+            "type": "button",
+            "id": "close",
+            "text": "Reopen issue",
+            "cssClass": "green",
+            "comment": "Issue is *{color:#00FF00}CLOSED{color}*"
+        },
+        {
+            "type": "button",
+            "id": "reopen",
+            "text": "Reopen issue",
+            "cssClass": "yellow",
+            "comment": "Issue is *{color:#FF0000}REOPENED{color}*"
+        }
+    ]
+}
