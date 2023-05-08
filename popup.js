@@ -3,9 +3,6 @@ let config = null;
 
 document.addEventListener('DOMContentLoaded', function() {
     initUi();
-    // document.getElementById('debug1').addEventListener('click', function() {
-    //     saveSettings();
-    // });
     loadSettings();
 
     document.querySelectorAll('input').forEach(item => {
