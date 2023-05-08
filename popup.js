@@ -136,7 +136,7 @@ function generateOutput(additionalText) {
     console.log(result);
 
     chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
-        let arg = {action: "sendComment", comment: result, selectors: config.selectors};
+        let arg = {action: "sendComment", comment: result, selectors: config.jiraSelectors};
         chrome.tabs.sendMessage(tabs[0].id, arg, function(response) {
         console.log("Response IN popup: " + JSON.stringify(response));
         });

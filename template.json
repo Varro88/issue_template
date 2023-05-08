@@ -1,9 +1,11 @@
 {
-    "selectors": {
+    "jiraSelectors": {
+        "newIssuePopupTitle": "h2[title='Create Issue']",
         "commentButton": "#footer-comment-button",
         "textModeButton": "li[data-mode='source']>button",
         "visualModeButton": "li[data-mode='wysiwyg']>button",
-        "commentField": "#comment"
+        "commentField": "#comment",
+        "descriptionField": "#description"
     },
     "uiElements": [
         {
