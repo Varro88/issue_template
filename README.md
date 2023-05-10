@@ -1,6 +1,13 @@
 ## Description
 Chrome extension for quick filling issue comment in Jira (e.g. specify environment, build, resolution, etc based on predefined template)
 
+## Main feature
+1. Dynamic fields based on json config
+1. Support for comment field and new issue form in Jira
+1. Saving fields state in storage
+
+![Extension screenshot](/screenshot.jpg)
+
 ## Important notes
 1. As Jira uses WYSIWYG editor (that is hard to manipulate with because of iframe) it was decided to work with the text mode as muck simpler. Text mode is actually `textarea` tag with markdown support, so main flow is Switch to Text mode -> Set generated text in markdown format to texrarea -> switch back to Visual mode.
 1. You may notice that after adding text "Add" button is still inactive. You just need to type any character (it's assumed that anyway you're going to provide some additional data), so shouldn't be a problem. Technical reason is that button is enabling after some javascript events (keypress, onchange or similar) that for now are not implemented in the plugin.
